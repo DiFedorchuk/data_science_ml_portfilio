@@ -1,34 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dmytro Fedorchuk | Data Scientist/ML Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dmytro Fedorchuk — Data Scientist & ML Engineer Portfolio">
+  <title>Dmytro Fedorchuk — Data Scientist & ML Engineer</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">DMYTRO FEDORCHUK</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="logo" href="#about">DMYTRO FEDORCHUK</a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about" class="hero">
-    <div class="hero-text">
-      <h2>Data Scientist / ML Engineer</h2>
-      <h1>From Data to <span>ML product.</span></h1>
-      <p>Brief pitch about your experience and key milestones...</p>
-    </div>
-  </section>
+  <main class="container">
+    <!-- HERO SECTION -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <div class="hero-main">
+          <div class="hero-text">
+            <p class="eyebrow">DATA ANALYST / ML ENGINEER</p>
+            <h1>Transforming Data into Intelligent Products</h1>
+            <p class="lead">
+              Data Analyst turned Machine Learning Engineer. I build analytical solutions, automated pipelines, and ML models to solve real-world business problems.
+            </p>
+          </div>
 
-  <!-- Add remaining sections (#skills, #projects, #experience, #contact) -->
+          <div class="hero-photo">
+            <img src="photo.jpg" alt="Profile photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- 01 / ABOUT -->
+<section class="section" id="about">
+  <div class="section-label">01 / About</div>
+  <div class="section-content">
+    <h2>Bridging Business Analytics & Machine Learning</h2>
+    <p>
+      With 4 years of experience in Supply Chain management and 2.5 years in Data Analytics, I bring a business-first approach to Machine Learning. I specialize in turning raw data into structured pipelines, actionable metrics, and predictive models.
+    </p>
+    <p>
+      I have designed and deployed end-to-end Python automation solutions, created scalable ETL workflows, and completed 20+ ML projects covering Classification, Forecasting, NLP, Recommendation Systems, and Computer Vision.
+    </p>
+
+    <!-- Виділений вектор розвитку -->
+    <div class="path-badge">
+      <span class="path-from">Data Analytics</span>
+      <span class="path-arrow">→</span>
+      <span class="path-to">Data Science / ML Engineering</span>
+    </div>
+  </div>
+</section>
+
+    <!-- 02 / SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-label">02 / Skills</div>
+      <div class="section-content">
+        <h2>Technical Expertise</h2>
+        <div class="skill-grid">
+          <article class="card">
+            <h3>Supervised Learning</h3>
+            <ul>
+              <li>Regression & Classification (Pipelines, Imbalance)</li>
+              <li>Ensembles (XGBoost, LightGBM, Random Forest)</li>
+              <li>Time Series Forecasting (ARIMA, Prophet, LSTM)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Unsupervised & RecSys</h3>
+            <ul>
+              <li>Clustering: KMeans, DBSCAN, Hierarchical</li>
+              <li>Dimensionality Reduction: PCA, t-SNE</li>
+              <li>Collaborative & Content-based Filtering, Two-Tower</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Deep Learning & GenAI</h3>
+            <ul>
+              <li>PyTorch & Neural Networks (ANN, CNN, RNN)</li>
+              <li>NLP Fundamentals, TF-IDF, Transformers</li>
+              <li>LangChain, RAG, Multi-agent (LangGraph)</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Tools & Infrastructure</h3>
+            <ul>
+              <li>Python, Pandas, NumPy, Scikit-learn</li>
+              <li>SQL (PostgreSQL, MS SQL Server)</li>
+              <li>Git, Docker, Azure, Power BI, FastAPI, Streamlit</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 / PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-label">03 / Projects</div>
+      <div class="section-content">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          
+          <article class="card project-card">
+            <div class="card-header">
+              <span class="project-number">01</span>
+              <h3>Question Pair Classification</h3>
+            </div>
+            <p>
+              NLP duplicate question detection on Quora Pairs dataset. Feature engineering, similarity modeling, and BERT fine-tuning.
+            </p>
+            <div class="tags">
+              <span>BERT</span><span>PyTorch</span><span>scikit-learn</span><span>NLP</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/DiFedorchuk/Quora_Questions_Pairs" target="_blank" rel="noreferrer">View project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-header">
+              <span class="project-number">02</span>
+              <h3>Bank Marketing ML</h3>
+            </div>
+            <p>
+              Predictive ML model for customer subscription to term deposits. Includes EDA, hyperparameter tuning, and model evaluation.
+            </p>
+            <div class="tags">
+              <span>XGBoost</span><span>Logistic Regression</span><span>KNN</span><span>Decision Tree</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/DiFedorchuk/Bank_Marketing_ML_Project" target="_blank" rel="noreferrer">View project ↗</a>
+            </div>
+          </article>
+
+          <article class="card project-card">
+            <div class="card-header">
+              <span class="project-number">03</span>
+              <h3>Australian Rain Forecast</h3>
+            </div>
+            <p>
+              End-to-end ML web app predicting next-day rainfall in Australia. Achieved 0.87 ROC-AUC and deployed via Streamlit.
+            </p>
+            <div class="tags">
+              <span>Streamlit</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/DiFedorchuk/Rain_Forecast" target="_blank" rel="noreferrer">GitHub ↗</a>
+              <a href="https://australianrainforecast.streamlit.app/" target="_blank" rel="noreferrer">Live demo ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 / EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="section-label">04 / Experience</div>
+      <div class="section-content">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+          
+          <article class="timeline-item">
+            <div class="date">Dec 2025 – Aug 2026</div>
+            <div class="details">
+              <h3>Machine Learning Engineer (Internship)</h3>
+              <p class="company">Data Lovers Academy</p>
+              <p>
+                Completed 20+ ML projects in classification, NLP, RecSys, and time series. 
+                Built end-to-end pipelines using PyTorch and scikit-learn, deployed apps with FastAPI and Streamlit.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="date">Mar 2024 – Present</div>
+            <div class="details">
+              <h3>Syndicated Data Analyst</h3>
+              <p class="company">Nestlé Business Solutions Lviv</p>
+              <p>
+                Automated data harmonization with Python across multi-source datasets. Delivered 4 automation solutions saving ~1 FTE and built interactive Power BI dashboards.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="date">May 2020 – Feb 2024</div>
+            <div class="details">
+              <h3>Inter-Market Supply Planner</h3>
+              <p class="company">Nestlé Ukraine</p>
+              <p>
+                Applied demand forecasting and inventory optimization. Maintained Customer Order Fulfillment above 97% and optimized warehouse storage utilization.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 / EDUCATION -->
+    <section class="section">
+      <div class="section-label">05 / Education</div>
+      <div class="section-content">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>Master in Economic Cybernetics</h3>
+          <p class="company">Kyiv National Economic University named after Vadym Hetman</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 / CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-label">06 / Contact</div>
+      <div class="section-content">
+        <h2>Get in Touch</h2>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <span class="contact-label">LOCATION</span>
+            <span class="contact-value">Odesa, Ukraine</span>
+          </div>
+          <div class="contact-card">
+            <span class="contact-label">EMAIL</span>
+            <a class="contact-value" href="mailto:fedorchukdima92@gmail.com">fedorchukdima92@gmail.com</a>
+          </div>
+          <div class="contact-card">
+            <span class="contact-label">LINKEDIN</span>
+            <a class="contact-value" href="https://www.linkedin.com/in/df92" target="_blank" rel="noreferrer">Dmytro Fedorchuk</a>
+          </div>
+          <div class="contact-card">
+            <span class="contact-label">GITHUB</span>
+            <a class="contact-value" href="https://github.com/DiFedorchuk" target="_blank" rel="noreferrer">DiFedorchuk</a>
+          </div>
+          <div class="contact-card">
+            <span class="contact-label">PHONE</span>
+            <a class="contact-value" href="tel:+380988401637">+380 98 840 1637</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <span>© 2026 Dmytro Fedorchuk • Odesa, Ukraine</span>
+    <span>Data Scientist / ML Engineer</span>
+  </footer>
+
 </body>
 </html>
