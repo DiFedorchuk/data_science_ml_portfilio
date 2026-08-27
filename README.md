@@ -55,4 +55,4 @@ This project covers the complete Machine Learning lifecycle:
 
 ## 🤝 Connect
 
-- 💻 **GitHub:** [DiFedorchuk](https://github.com/🔗 **LinkedIn:** [Dmytro Fedorchkedin.com/in/df92
+- 💻 **[GitHub](https://github.com/DiFedorchuk) **   **[LinkedIn](www.linkedin.com/in/df92)**
